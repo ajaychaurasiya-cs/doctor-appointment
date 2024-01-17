@@ -3,7 +3,7 @@
 The Doctor Appointment App is a React-based web application that allows users to schedule appointments with doctors. This app simplifies the process of booking and managing medical appointments.
 
 ## Demo
-
+https://ajaychaurasiya-cs.github.io/doctor-appointment/
 
 ## Features
 
@@ -20,7 +20,7 @@ To run the Doctor Appointment App locally, follow these steps:
 Clone the project
 
 ```bash
-  git clone https://github.com/
+  git clone https://github.com/ajaychaurasiya-cs/doctor-appointment.git
 ```
 
 Go to the project directory
