@@ -1,0 +1,32 @@
+.side_cont{
+    display: inline;
+    //  background: yellowgreen;
+    width: 20rem;
+    .side_banner{
+        h1{
+            @include margin-x(5rem, 0);
+        }
+        .side_img{
+            padding: 2rem;
+            width: 30rem;
+            height: 55rem;
+            img{
+                
+                width: 100%;
+                height: 100%
+            }
+            @include devices(xl){
+                width: 100%;
+            }
+        }
+
+
+    }
+    
+    @include devices(lg){
+        display: none;
+    }
+}
+
+
+

@@ -1,0 +1,10 @@
+.doctor_container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    // @include devices(md){
+    //     display: inline;
+    //     background: green;
+    // }
+}

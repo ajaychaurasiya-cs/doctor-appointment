@@ -1,0 +1,22 @@
+#featured {
+    margin-top: 3rem;
+}
+
+.featured_slides {
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+
+    @include devices(md) {
+        width: 16rem;
+    }
+}
+
+.featured_img {
+    @include margin-y(2rem, 2rem);
+    overflow: hidden;
+
+    img {
+        @include img-fit;
+    }
+}

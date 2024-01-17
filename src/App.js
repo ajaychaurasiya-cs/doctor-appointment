@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { CommonProvider } from './contexts/common/commonContext';
+import { CartProvider } from './contexts/cart/cartContext';
+import Header from './components/common/Header';
+import RouterRoutes from './routes/RouterRoutes';
+import Footer from './components/common/Footer';
+import BackTop from './components/common/BackTop';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CommonProvider>
+          <CartProvider>
+            <Header />
+            <RouterRoutes />
+            <Footer />
+            <BackTop />
+          </CartProvider>
+      </CommonProvider>
+    </>
   );
-}
+};
 
 export default App;

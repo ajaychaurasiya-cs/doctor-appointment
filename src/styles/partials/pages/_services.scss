@@ -1,0 +1,46 @@
+.services_wrapper {
+    @include grid-cols(4, 1fr, 2rem);
+    place-items: center;
+    
+    @include flexbox(center,center);
+    
+    // @include devices(lg) {
+    //     @include grid-cols(2, 1fr, 3rem);
+    // }
+
+    @include devices(xs) {
+        grid-template-columns: 1fr;
+    }
+    .service_icone{
+        display: flex;
+        flex-wrap: wrap;
+
+        @include padding-y(3rem, 3rem);
+       
+    }
+    
+}
+
+
+
+.services_card {
+    @include margin-x( 1rem, 1rem);
+    @include margin-y( 1rem, 1rem);
+    @include flexbox(flex-start, center);
+}
+
+.services_icon {
+    color: var(--main-color);
+    opacity: 0.9;
+    font-size: 2.2rem;
+    line-height: 1;
+    @include margin-x(1rem, 1rem);
+}
+
+.services_details {
+    p {
+        font-size: 0.875rem;
+        margin-top: 0.4rem;
+        opacity: 0.8;
+    }
+}

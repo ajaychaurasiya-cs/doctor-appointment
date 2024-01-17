@@ -1,0 +1,115 @@
+#Druct_details {
+    padding-top: 6rem;
+}
+
+.Dr_details_wrapper {
+    grid-template-columns: 1fr 0.7fr;
+    gap: 4rem;
+    @include flexbox(space-between, center);
+    @include devices(lg) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    @include devices(xs) {
+        @include flexbox(center,center);
+        flex-flow: wrap;
+    }
+
+    .Dr_img{
+        @include margin-x(0,1rem);
+        @include margin-y(0,1rem);
+        border-radius: 1rem;
+        width: 30rem;
+        height: 30rem;
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+    }
+
+    
+}
+
+.Dr_doc{
+    @include flexbox(space-between,start);
+    @include margin-x(2rem, 2rem);
+    @include margin-y(2rem, 10rem);
+    flex-flow: wrap;
+
+    .Dr_doc_cont{
+        width: 10rem;
+    }
+    
+    h3{
+        @include margin-y(2rem, 2rem);
+        }
+}
+
+.Dr_details_right_col {
+    .separator {
+        @include margin-y(2.2rem, 2.2rem);
+    }
+}
+
+.Dr_details_info {
+    @include margin-y(0.6rem, 1.2rem);
+    font-weight: 600;
+}
+
+.Dr_details_ratings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    a {
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.Dr_details_price {
+    @include flexbox(space-between, center);
+
+    .price {
+        font-size: 2rem;
+    }
+
+
+}
+
+.Dr_details_offers {
+
+    h4 {
+        font-weight: 600;
+    }
+
+    ul {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+
+        li {
+            @include bordered(1px, var(--text-muted));
+            background-color: var(--main-color-1);
+            border-radius: 3px;
+            font-size: 0.9rem;
+            padding: 0.6rem;
+        }
+    }
+}
+
+.Dr_details_book_btn {
+
+    .btn {
+        width: 200px;
+    }
+    @include devices(xs){
+        @include flexbox(center, center)
+    }
+}

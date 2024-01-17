@@ -1,0 +1,163 @@
+// .doctor_wrapper {
+//     @include grid-cols(4, 1fr, 0.7rem);
+
+//     @include devices(lg) {
+//         @include grid-cols(3, 1fr, 0.7rem);
+//     }
+
+//     @include devices(md) {
+//         @include grid-cols(2, 1fr, 0.6rem);
+//     }
+
+//     @include devices(xs) {
+//         grid-template-columns: 1fr;
+//     }
+// }
+
+
+.doctor_container{
+    display: inline;
+    
+}
+    .doctor_card {
+        @include bordered(1px, rgba($color: #ffffff, $alpha: 0.4));
+        border-radius: 3px;
+        box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.5);
+        overflow: hidden;
+        @include flexbox(space-between, center);
+        @include padding-x(0rem, .5rem);
+        @include margin-x(2rem, 2rem);
+        .browse_card {
+            @include centered;
+            @include padding-y(5rem, 5rem);
+            font-size: 1.5rem;
+
+            a {
+                @include transition(color, 0.3s);
+
+                &:hover {
+                    color: #eee;
+                }
+            }
+        }
+
+        .doctor_card_cont{
+            display: flex;
+            
+            .doctor_img {
+                text-align: center;
+                padding: 1rem;
+                overflow: hidden;
+                cursor: pointer;
+
+                img {
+                    width: 10rem;
+                    border-radius: 1rem;
+                    @include transition(transform, 0.25s, ease);
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                    
+                }
+    
+            }
+            @include devices(sm){
+                display: inline;
+            }
+
+        }
+        @include devices(sm){
+            justify-content: center;
+            display: grid;
+            justify-items: center;
+            @include padding-y(1rem, 1rem); 
+        }
+        @include margin-y(2rem, 2rem);
+
+    }
+
+    
+
+.doctor_details {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.doctor_title {
+    @include margin-y(0.8rem, 0.4rem);
+    
+}
+
+.doctor_info {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.doctor_btn {
+    width: 100%;
+    margin-top: 1.2rem;
+
+    &.active {
+        background-color: green;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}
+.products_card{
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 5rem;
+    background: linear-gradient(to left, rgba(0, 128, 0, 0.306), rgba(0, 0, 255, 0.26), rgba(255, 255, 0, 0.333));
+    &:hover{ font-weight:bold;
+        
+   
+}}
+
+.cart_item_price{
+    display: grid;
+}
+
+// consult show btn
+.show_consult_btn{
+    background: var(--main-color-1);
+    border-radius: 3px;
+    padding: .3rem ;
+    cursor: pointer;
+    @include flexbox(center,center);
+
+    &:hover{
+        color: white;
+    }
+}
+
+
+
+/*------ All-doctor Page ------*/
+#all_doctor {
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+
+    @include devices(lg) {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor_wrapper {
+        @include devices(xl) {
+            @include grid-cols(3, 1fr, 0.7rem);
+        }
+
+        @include devices(md) {
+            @include grid-cols(2, 1fr, 0.6rem);
+        }
+
+        @include devices(xs) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+#hero {
+    @include centered;
+
+    .swiper {
+        @include dimension(100%, 100%);
+        @include padding-x(0.75rem, 0.75rem);
+        @include padding-y(5rem, 1rem);
+    }
+
+    .swiper-pagination {
+        bottom: 30px;
+    }
+}
+
+.wrap_hero{
+    @include flexbox(center, center)
+
+}
+
+
+.hero_item_txt {
+    
+    position: absolute;
+    color: var(--bg-color);
+    
+    padding: 0.5rem;
+    border-radius: 1.1rem;
+    border: 2px double #ffffff;
+    background: linear-gradient( to left, rgba(0, 0, 0, 0.8), rgba(166, 0, 255, 0.8));
+    top: 60%;
+    font-size: 300%;
+    @include flexbox(flex-start,baseline);
+    
+    @include devices(lg) {
+        font-size: 250%;
+    }
+    @include devices(md) {
+        font-size: 200%;
+    }
+    @include devices(sm) {
+        font-size: 150%;
+    }
+    @include devices(xs) {
+        font-size: 100%;
+    }
+
+
+
+    h3{
+        @include devices(xs) {
+         font-size: 150%;
+
+        }
+        
+    }
+    
+    .btn {
+        @include margin-y(0rem, 0rem);
+        @include margin-x(1rem, .3rem);
+        @include devices(xl) {
+        }
+
+        @include devices(sm) {
+        }
+
+        @include devices(xs) {
+        }
+    }
+    
+
+}
+
+.hero_item_img {
+    overflow: hidden;
+    border-radius: 2rem;
+    background: #000;
+    width: 100rem;
+    height: 30rem;
+
+    .hero_img {
+        @include img-fit;
+    }
+
+    @include devices(lg) {
+        width: 100%;
+        height: 100%;
+    }
+    @include devices(sm) {
+        width: 100%;
+        height: 100%;
+    }
+    
+    @include devices(xs) {
+        width: 100%;
+        height: 100%;
+    }
+}

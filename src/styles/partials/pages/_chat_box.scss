@@ -1,0 +1,117 @@
+
+.consult{
+    margin: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include devices(xs){
+        display: inline;
+
+    }
+}
+
+.icon{
+    img{
+        width: 100%;
+    }
+}
+
+.chat-box-head{
+    margin-top: 5rem;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    background: #2196f3;
+    .icone{
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+
+    }
+}
+
+// video box
+.video-input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+    padding: 10px;
+    
+    
+}
+
+.video-gif{
+   
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* CHat BoX */
+.chat-box {
+    max-width: 400px;
+    height: 350px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    .message-list {
+        padding: 10px;
+        height: 300px;
+        overflow-y: auto;
+  
+        .message {
+            padding: 8px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            
+            .user {
+                background-color: #4caf50;
+                color: white;
+                align-self: flex-end;
+                
+            }
+        }
+    }
+
+    .user {
+        background-color: #4caf50;
+        color: white;
+        align-self: flex-end;
+        
+    }
+
+    .input-container {
+        display: flex;
+        padding: 10px;
+        background-color: #f9f9f9;
+
+        input {
+            flex: 1;
+            padding: 8px;
+            margin-right: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    }
+
+} 
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+}

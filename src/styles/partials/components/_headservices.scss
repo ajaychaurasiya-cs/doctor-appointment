@@ -1,0 +1,38 @@
+// #haedservice{
+    
+// }
+
+.serv_cont{
+    display: flex;  
+    .serv_imgs{
+        width: 50%;
+        border: 1px solid black;
+        flex-flow: wrap;
+        padding: .2rem;
+        background: linear-gradient( to top, var(--main-color), var(--main-color-1));
+        border-radius: 10%;
+        cursor: pointer;
+
+        @include flexbox(center, center);
+        @include margin-x(.5rem, .5rem);
+        .img{
+            border-radius: 5rem; 
+            background: var(--bg-color);
+            width: 10rem;
+
+            @include devices(xl) {
+                width: 5rem;
+            }
+            @include devices(xs) {
+                width: 100%;
+            }
+        }
+    }
+    .title{
+        font-size: 1rem;
+        @include devices(xs) {
+            font-size: .5rem;
+        }
+    }
+    
+}
