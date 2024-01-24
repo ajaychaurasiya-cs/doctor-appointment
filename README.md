@@ -4,6 +4,7 @@ The Doctor Appointment App is a React-based web application that allows users to
 
 ## Demo
 https://ajaychaurasiya-cs.github.io/doctor-appointment/
+![Uploading pt-2.jpg…]()
 
 ## Features
 
