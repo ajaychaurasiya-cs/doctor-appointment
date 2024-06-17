@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/doctor-appointment/static/css/main.957ab49e.css",
-    "main.js": "/doctor-appointment/static/js/main.521405be.js",
+    "main.css": "/doctor-appointment/static/css/main.b97f58e7.css",
+    "main.js": "/doctor-appointment/static/js/main.405a65fe.js",
     "static/js/787.0993de94.chunk.js": "/doctor-appointment/static/js/787.0993de94.chunk.js",
     "index.html": "/doctor-appointment/index.html",
-    "main.957ab49e.css.map": "/doctor-appointment/static/css/main.957ab49e.css.map",
-    "main.521405be.js.map": "/doctor-appointment/static/js/main.521405be.js.map",
+    "main.b97f58e7.css.map": "/doctor-appointment/static/css/main.b97f58e7.css.map",
+    "main.405a65fe.js.map": "/doctor-appointment/static/js/main.405a65fe.js.map",
     "787.0993de94.chunk.js.map": "/doctor-appointment/static/js/787.0993de94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.957ab49e.css",
-    "static/js/main.521405be.js"
+    "static/css/main.b97f58e7.css",
+    "static/js/main.405a65fe.js"
   ]
 }
