@@ -1,6 +1,9 @@
 #featured {
     margin-top: 3rem;
 }
+.featured{
+    padding: 1rem 0 2rem 0;
+}
 
 .featured_slides {
     text-align: center;
@@ -15,8 +18,26 @@
 .featured_img {
     @include margin-y(2rem, 2rem);
     overflow: hidden;
+    .featured_img_wrap{
+        width: 20rem;
+        height: 20rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        .f_img{
+            width: 100%;
+            height: 100rem;
+        }
+    }
 
     img {
-        @include img-fit;
+        // @include img-fit;
+        width:100%;
+        // height: 50%;
     }
+    
 }
+.featured_title{
+        @include margin-y(1rem, 1rem)
+    }

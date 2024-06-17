@@ -55,15 +55,24 @@ const FeaturedSlider = () => {
 
                     return (
                         <SwiperSlide key={id} className="featured_slides" onClick={()=> navigate(`${'/doctor-detail/'}${id}`)}>
-                            
-                            <figure className="featured_img">
-                                    <img src={images} alt="" />
+                            <div className="featured">
+                        
+                                <figure className="featured_img">
+                                    <div className='featured_img_wrap'>
+                                        <div className='f_img'>
+                                            <img src={images} alt="" />
+                                        </div>
+                                        
+                                    </div>
+                                </figure>
                                     <div className="featured_title">{title}</div>
-                            </figure>
-                            <h2 className="products_price">
-                               fee ₹{fees}
-                                <small><p>{Specializations}</p></small>
-                            </h2>
+
+                                <h2 className="products_price">
+                                fee ₹{fees}
+                                    <small><p>{Specializations}</p></small>
+                                </h2>
+
+                            </div>
                         </SwiperSlide>
                     );
                 })
