@@ -1,31 +1,32 @@
-# TABI-E-COM
+# Doctor Appointment
 
-A Ecommerce Website made with React.js 
-
+The Doctor Appointment App is a React-based web application that allows users to schedule appointments with doctors. This app simplifies the process of booking and managing medical appointments.
 
 ## Demo
-https://ajaychaurasiya-cs.github.io/TABI-E-COM/
+
 
 ## Features
 
-- Easy to integrate with Backend
-- Fully Responsive
-- Dynamic Pages using React Router
+- User authentication for secure access.
+- Appointment scheduling with date and time selection.
+- View, edit, and cancel upcoming appointments.
+- Browse and search for available doctors.
+- Responsive design for seamless user experience on various devices.
 
+## Installation
 
-
-## Run Locally
+To run the Doctor Appointment App locally, follow these steps:
 
 Clone the project
 
 ```bash
-  git clone https://github.com/ssahibsingh/React_E-Commerce
+  git clone https://github.com/
 ```
 
 Go to the project directory
 
 ```bash
-  cd TABI-E-COM
+  cd doctor-appointment
 ```
 
 Install dependencies
@@ -40,24 +41,36 @@ Start the server
   npm start
 ```
 
+## Usage
 
+- Register for an account or log in if you already have one.
+- Browse available doctors and select one.
+- Choose a suitable date and time for your appointment.
+- Confirm and review your appointment details.
+- View and manage your upcoming appointments.
 
-## Tech Stack
+## Pages
 
-* [React](https://reactjs.org/)
-* [Redux-Toolkit](https://redux-toolkit.js.org/)
-* [Fake Store API](https://fakestoreapi.com/)
+- Home page
+- All Doctor page
+- Doctor Detail page
+- Consulting page
+- Appointment page
+And other 
+- Search
+- Login
+- Signup
+
+## Technologies Used
+
+- React
+- React Router 
+- Scss 
+And other
+- React icons 
+- Swiper
 
 ## Contributing
 
 Contributions are always welcome!
 Just raise an issue, we will discuss it.
-
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://ajaychuarasiya-cs.github.io/)
-
-
-# TABI-E-COM
-

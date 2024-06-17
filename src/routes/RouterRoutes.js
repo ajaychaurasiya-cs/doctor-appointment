@@ -20,7 +20,8 @@ const RouterRoutes = () => {
                 <Route path="/all-AllDoctor" element={<AllDoctor />} />
                 <Route path="/doctor-detail/:id" element={<DoctorDetails />} />
                 <Route path="/Chatbox" element={<ChatBox />} />
-                <Route path="*" element={<ErrorPage />} />
+                <Route path="*" element={<Home />} />
+                <Route path="/*" element={<ErrorPage />} />
 
             </Routes>
         </>
